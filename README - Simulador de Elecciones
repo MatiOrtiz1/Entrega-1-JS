@@ -1,20 +1,18 @@
-README - Simulador de Elecciones
-Descripción
 Este proyecto es un simulador de elecciones diseñado para la consola de JavaScript. Permite registrar candidatos, asignar porcentajes de votos en diferentes provincias, y obtener resultados generales y provinciales. Está orientado a estudiantes de nivel intermedio de JavaScript y se enfoca en conceptos como condicionales, ciclos, funciones, arrays, y objetos literales.
 
 Características principales
-Registrar candidatos: Carga el nombre, partido político y los votos en cada provincia.
-Asignar votos por provincia: Permite seleccionar provincias específicas para ingresar el porcentaje de votos.
-Eliminar candidatos: Elimina un candidato y los votos registrados en todas las provincias.
-Resultados generales: Muestra el total de votos acumulados por cada candidato.
-Resultados provinciales: Permite elegir una provincia y listar los votos obtenidos por cada candidato en ella.
-Provincias incluidas:
--Buenos Aires
--Ciudad Autónoma de Buenos Aires
--Córdoba
--Mendoza
--Santa Fe
--Tucumán
+a) Registrar candidatos: Carga el nombre, partido político y los votos en cada provincia.
+b) Asignar votos por provincia: Permite seleccionar provincias específicas para ingresar el porcentaje de votos.
+c) Eliminar candidatos: Elimina un candidato y los votos registrados en todas las provincias.
+d) Resultados generales: Muestra el total de votos acumulados por cada candidato.
+e) Resultados provinciales: Permite elegir una provincia y listar los votos obtenidos por cada candidato en ella.
+f) Provincias incluidas:
+    - Buenos Aires
+    - Ciudad Autónoma de Buenos Aires
+    - Córdoba
+    - Mendoza
+    - Santa Fe
+    - Tucumán
 
 Opciones del menú
 1) Agregar candidato
