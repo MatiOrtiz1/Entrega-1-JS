@@ -3,12 +3,485 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador de Elecciones</title>
+    <title>Tienda Apple - Carrito de Compras</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Simulador de Elecciones 2024</h1>
-    <p>Gestiona candidatos, porcentajes y resultados desde la consola.</p>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/apple-logo.png" alt="Apple Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#macbook">MacBook</a></li>
+                <li><a href="#ipad">iPad</a></li>
+                <li><a href="#iphone">iPhone</a></li>
+                <li><a href="#watch">Apple Watch</a></li>
+                <li><a href="#accessories">Accesorios</a></li>
+            </ul>
+            <div id="cart-info">
+                <span>Total de productos: <span id="cart-count">0</span></span> | 
+                <span>Total: <span id="cart-total">$0.00</span></span>
+            </div>
+    </header>
+
+    <main>
+        <!-- Sección MacBook -->
+        <section id="macbook" class="products-section">
+            <h2>MacBook</h2>
+            <div class="product-list">
+                <!-- Producto 1 -->
+                <div class="product" id="product1">
+                    <img src="images/macbookair.jpg" alt="MacBook Air">
+                    <h3>MacBook Air</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Retina de 13.3” con True Tone</i></li>
+                        <li><i>Chip M2 de Apple con 8 núcleos</i></li>
+                        <li><i>Hasta 16GB de memoria RAM</i></li>
+                        <li><i>Almacenamiento de 256GB SSD</i></li>
+                        <li><i>Batería de hasta 18 horas de uso</i></li>
+                    </ul>
+                    <p><strong>$1199</strong></p>
+                    <button class="add-to-cart" data-id="1" data-name="MacBook Air" data-price="1199">Añadir al carrito</button>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product" id="product2">
+                    <img src="images/macbookpro.jpg" alt="MacBook Pro">
+                    <h3>MacBook Pro</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Retina de 16” con ProMotion</i></li>
+                        <li><i>Chip M2 Pro con hasta 12 núcleos</i></li>
+                        <li><i>Hasta 64GB de memoria RAM</i></li>
+                        <li><i>Almacenamiento de 1TB SSD</i></li>
+                        <li><i>Hasta 21 horas de batería</i></li>
+                    </ul>
+                    <p><strong>$2399</strong></p>
+                    <button class="add-to-cart" data-id="2" data-name="MacBook Pro" data-price="2399">Añadir al carrito</button>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product" id="product3">
+                    <img src="images/macbookpro13.jpg" alt="MacBook Pro 13">
+                    <h3>MacBook Pro 13"</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Retina de 13”</i></li>
+                        <li><i>Chip M2 de Apple</i></li>
+                        <li><i>8GB de memoria RAM</i></li>
+                        <li><i>Almacenamiento de 512GB SSD</i></li>
+                        <li><i>Hasta 20 horas de batería</i></li>
+                    </ul>
+                    <p><strong>$1799</strong></p>
+                    <button class="add-to-cart" data-id="3" data-name="MacBook Pro 13" data-price="1799">Añadir al carrito</button>
+                </div>
+                <!-- Producto 4 -->
+                <div class="product" id="product4">
+                    <img src="images/macbookpro15.jpg" alt="MacBook Pro 15">
+                    <h3>MacBook Pro 15"</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Retina de 15” con True Tone</i></li>
+                        <li><i>Chip M1 Pro con 8 núcleos</i></li>
+                        <li><i>Hasta 32GB de memoria RAM</i></li>
+                        <li><i>Almacenamiento de 512GB SSD</i></li>
+                        <li><i>Hasta 17 horas de batería</i></li>
+                    </ul>
+                    <p><strong>$2299</strong></p>
+                    <button class="add-to-cart" data-id="4" data-name="MacBook Pro 15" data-price="2299">Añadir al carrito</button>
+                </div>
+                <!-- Producto 5 -->
+                <div class="product" id="product5">
+                    <img src="images/macbookairblue.jpg" alt="MacBook Air Blue">
+                    <h3>MacBook Air Blue</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Retina de 13.3”</i></li>
+                        <li><i>Chip M2 de Apple</i></li>
+                        <li><i>8GB de memoria RAM</i></li>
+                        <li><i>256GB de almacenamiento SSD</i></li>
+                        <li><i>Batería de hasta 15 horas</i></li>
+                    </ul>
+                    <p><strong>$1199</strong></p>
+                    <button class="add-to-cart" data-id="5" data-name="MacBook Air Blue" data-price="1199">Añadir al carrito</button>
+                </div>
+                <!-- Producto 6 -->
+                <div class="product" id="product6">
+                    <img src="images/macbookpro16.jpg" alt="MacBook Pro 16">
+                    <h3>MacBook Pro 16"</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Retina de 16”</i></li>
+                        <li><i>Chip M2 Max</i></li>
+                        <li><i>Hasta 64GB de memoria RAM</i></li>
+                        <li><i>1TB SSD</i></li>
+                        <li><i>Hasta 21 horas de batería</i></li>
+                    </ul>
+                    <p><strong>$2499</strong></p>
+                    <button class="add-to-cart" data-id="6" data-name="MacBook Pro 16" data-price="2499">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección iPad -->
+        <section id="ipad" class="products-section">
+            <h2>iPad</h2>
+            <div class="product-list">
+                <!-- Producto 1 -->
+                <div class="product" id="product7">
+                    <img src="images/ipadpro12.jpg" alt="iPad Pro 12.9">
+                    <h3>iPad Pro 12.9"</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Liquid Retina de 12.9”</i></li>
+                        <li><i>Chip M2 de Apple</i></li>
+                        <li><i>Hasta 1TB de almacenamiento</i></li>
+                        <li><i>Cámara de 12MP y grabación en 4K</i></li>
+                        <li><i>Compatibilidad con Apple Pencil y Magic Keyboard</i></li>
+                    </ul>
+                    <p><strong>$1099</strong></p>
+                    <button class="add-to-cart" data-id="7" data-name="iPad Pro 12.9" data-price="1099">Añadir al carrito</button>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product" id="product8">
+                    <img src="images/ipadair.jpg" alt="iPad Air">
+                    <h3>iPad Air</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Liquid Retina de 10.9”</i></li>
+                        <li><i>Chip A14 Bionic</i></li>
+                        <li><i>Hasta 256GB de almacenamiento</i></li>
+                        <li><i>Cámara de 12MP y grabación en 4K</i></li>
+                        <li><i>Compatibilidad con Apple Pencil (2ª generación)</i></li>
+                    </ul>
+                    <p><strong>$599</strong></p>
+                    <button class="add-to-cart" data-id="8" data-name="iPad Air" data-price="599">Añadir al carrito</button>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product" id="product9">
+                    <img src="images/ipadmini.jpg" alt="iPad Mini">
+                    <h3>iPad Mini</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Liquid Retina de 8.3”</i></li>
+                        <li><i>Chip A15 Bionic</i></li>
+                        <li><i>Hasta 256GB de almacenamiento</i></li>
+                        <li><i>Cámara de 12MP y grabación en 4K</i></li>
+                        <li><i>Compatibilidad con Apple Pencil (2ª generación)</i></li>
+                    </ul>
+                    <p><strong>$499</strong></p>
+                    <button class="add-to-cart" data-id="9" data-name="iPad Mini" data-price="499">Añadir al carrito</button>
+                </div>
+                <!-- Producto 4 -->
+                <div class="product" id="product10">
+                    <img src="images/ipadpro11.jpg" alt="iPad Pro 11">
+                    <h3>iPad Pro 11"</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Liquid Retina de 11”</i></li>
+                        <li><i>Chip M2 de Apple</i></li>
+                        <li><i>Hasta 512GB de almacenamiento</i></li>
+                        <li><i>Cámara de 12MP y grabación en 4K</i></li>
+                        <li><i>Compatibilidad con Apple Pencil y Magic Keyboard</i></li>
+                    </ul>
+                    <p><strong>$799</strong></p>
+                    <button class="add-to-cart" data-id="10" data-name="iPad Pro 11" data-price="799">Añadir al carrito</button>
+                </div>
+                <!-- Producto 5 -->
+                <div class="product" id="product11">
+                    <img src="images/ipadmini2021.jpg" alt="iPad Mini 2021">
+                    <h3>iPad Mini 2021</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Liquid Retina de 8.3”</i></li>
+                        <li><i>Chip A15 Bionic</i></li>
+                        <li><i>Hasta 256GB de almacenamiento</i></li>
+                        <li><i>Cámara de 12MP</i></li>
+                        <li><i>Apple Pencil (2ª generación) compatible</i></li>
+                    </ul>
+                    <p><strong>$499</strong></p>
+                    <button class="add-to-cart" data-id="11" data-name="iPad Mini 2021" data-price="499">Añadir al carrito</button>
+                </div>
+                <!-- Producto 6 -->
+                <div class="product" id="product12">
+                    <img src="images/ipad2020.jpg" alt="iPad 2020">
+                    <h3>iPad 2020</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Retina de 10.2”</i></li>
+                        <li><i>Chip A12 Bionic</i></li>
+                        <li><i>Hasta 128GB de almacenamiento</i></li>
+                        <li><i>Cámara de 8MP</i></li>
+                        <li><i>Compatible con Apple Pencil (1ª generación)</i></li>
+                    </ul>
+                    <p><strong>$329</strong></p>
+                    <button class="add-to-cart" data-id="12" data-name="iPad 2020" data-price="329">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección iPhone -->
+        <section id="iphone" class="products-section">
+            <h2>iPhone</h2>
+            <div class="product-list">
+                <!-- Producto 1 -->
+                <div class="product" id="product13">
+                    <img src="images/iphone14.jpg" alt="iPhone 14">
+                    <h3>iPhone 14</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla OLED Super Retina XDR de 6.1”</i></li>
+                        <li><i>Chip A15 Bionic</i></li>
+                        <li><i>Cámara dual de 12MP</i></li>
+                        <li><i>Disponible en 128GB, 256GB, 512GB</i></li>
+                        <li><i>Hasta 20 horas de batería</i></li>
+                    </ul>
+                    <p><strong>$799</strong></p>
+                    <button class="add-to-cart" data-id="13" data-name="iPhone 14" data-price="799">Añadir al carrito</button>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product" id="product14">
+                    <img src="images/iphone13.jpg" alt="iPhone 13">
+                    <h3>iPhone 13</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla OLED Super Retina XDR de 6.1”</i></li>
+                        <li><i>Chip A15 Bionic</i></li>
+                        <li><i>Cámara dual de 12MP</i></li>
+                        <li><i>Disponible en 128GB, 256GB, 512GB</i></li>
+                        <li><i>Hasta 19 horas de batería</i></li>
+                    </ul>
+                    <p><strong>$799</strong></p>
+                    <button class="add-to-cart" data-id="14" data-name="iPhone 13" data-price="799">Añadir al carrito</button>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product" id="product15">
+                    <img src="images/iphone13mini.jpg" alt="iPhone 13 Mini">
+                    <h3>iPhone 13 Mini</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Super Retina XDR de 5.4"</i></li>
+                        <li><i>Chip A15 Bionic</i></li>
+                        <li><i>Cámara de 12MP</i></li>
+                        <li><i>Disponible en 128GB y 256GB</i></li>
+                        <li><i>Hasta 17 horas de batería</i></li>
+                    </ul>
+                    <p><strong>$799</strong></p>
+                    <button class="add-to-cart" data-id="15" data-name="iPhone 13 Mini" data-price="799">Añadir al carrito</button>
+                </div>
+                <!-- Producto 4 -->
+                <div class="product" id="product16">
+                    <img src="images/iphone12.jpg" alt="iPhone 12">
+                    <h3>iPhone 12</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Super Retina XDR de 6.1”</i></li>
+                        <li><i>Chip A14 Bionic</i></li>
+                        <li><i>Cámara dual de 12MP</i></li>
+                        <li><i>Disponible en 64GB, 128GB, 256GB</i></li>
+                        <li><i>Hasta 17 horas de batería</i></li>
+                    </ul>
+                    <p><strong>$699</strong></p>
+                    <button class="add-to-cart" data-id="16" data-name="iPhone 12" data-price="699">Añadir al carrito</button>
+                </div>
+                <!-- Producto 5 -->
+                <div class="product" id="product17">
+                    <img src="images/iphone12mini.jpg" alt="iPhone 12 Mini">
+                    <h3>iPhone 12 Mini</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Super Retina XDR de 5.4”</i></li>
+                        <li><i>Chip A14 Bionic</i></li>
+                        <li><i>Cámara dual de 12MP</i></li>
+                        <li><i>Disponible en 64GB, 128GB, 256GB</i></li>
+                        <li><i>Hasta 15 horas de batería</i></li>
+                    </ul>
+                    <p><strong>$699</strong></p>
+                    <button class="add-to-cart" data-id="17" data-name="iPhone 12 Mini" data-price="699">Añadir al carrito</button>
+                </div>
+                <!-- Producto 6 -->
+                <div class="product" id="product18">
+                    <img src="images/iphone11.jpg" alt="iPhone 11">
+                    <h3>iPhone 11</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Liquid Retina HD de 6.1”</i></li>
+                        <li><i>Chip A13 Bionic</i></li>
+                        <li><i>Cámara dual de 12MP</i></li>
+                        <li><i>Disponible en 64GB y 128GB</i></li>
+                        <li><i>Hasta 17 horas de batería</i></li>
+                    </ul>
+                    <p><strong>$599</strong></p>
+                    <button class="add-to-cart" data-id="18" data-name="iPhone 11" data-price="599">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Apple Watch -->
+        <section id="watch" class="products-section">
+            <h2>Apple Watch</h2>
+            <div class="product-list">
+                <!-- Producto 1 -->
+                <div class="product" id="product19">
+                    <img src="images/applewatch7.jpg" alt="Apple Watch 7">
+                    <h3>Apple Watch Series 7</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Retina siempre encendida</i></li>
+                        <li><i>Chip S7 SiP</i></li>
+                        <li><i>Medición de oxígeno en sangre</i></li>
+                        <li><i>Seguimiento de actividad física</i></li>
+                        <li><i>Resistente al agua hasta 50m</i></li>
+                    </ul>
+                    <p><strong>$399</strong></p>
+                    <button class="add-to-cart" data-id="19" data-name="Apple Watch Series 7" data-price="399">Añadir al carrito</button>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product" id="product20">
+                    <img src="images/applewatchse.jpg" alt="Apple Watch SE">
+                    <h3>Apple Watch SE</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Retina LTPO OLED</i></li>
+                        <li><i>Chip S5 SiP</i></li>
+                        <li><i>Seguimiento de actividad física</i></li>
+                        <li><i>Medición de calorías y pasos</i></li>
+                        <li><i>Resistente al agua hasta 50m</i></li>
+                    </ul>
+                    <p><strong>$279</strong></p>
+                    <button class="add-to-cart" data-id="20" data-name="Apple Watch SE" data-price="279">Añadir al carrito</button>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product" id="product21">
+                    <img src="images/applewatch6.jpg" alt="Apple Watch Series 6">
+                    <h3>Apple Watch Series 6</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Retina siempre encendida</i></li>
+                        <li><i>Chip S6 SiP</i></li>
+                        <li><i>Medición de oxígeno en sangre</i></li>
+                        <li><i>Seguimiento de actividad física</i></li>
+                        <li><i>Resistente al agua hasta 50m</i></li>
+                    </ul>
+                    <p><strong>$399</strong></p>
+                    <button class="add-to-cart" data-id="21" data-name="Apple Watch Series 6" data-price="399">Añadir al carrito</button>
+                </div>
+                <!-- Producto 4 -->
+                <div class="product" id="product22">
+                    <img src="images/applewatch5.jpg" alt="Apple Watch Series 5">
+                    <h3>Apple Watch Series 5</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla siempre encendida</i></li>
+                        <li><i>Chip S5 SiP</i></li>
+                        <li><i>Seguimiento de actividad física</i></li>
+                        <li><i>Resistente al agua hasta 50m</i></li>
+                        <li><i>Seguimiento de sueño</i></li>
+                    </ul>
+                    <p><strong>$349</strong></p>
+                    <button class="add-to-cart" data-id="22" data-name="Apple Watch Series 5" data-price="349">Añadir al carrito</button>
+                </div>
+                <!-- Producto 5 -->
+                <div class="product" id="product23">
+                    <img src="images/applewatch4.jpg" alt="Apple Watch Series 4">
+                    <h3>Apple Watch Series 4</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Retina</i></li>
+                        <li><i>Chip S4 SiP</i></li>
+                        <li><i>Medición de ECG</i></li>
+                        <li><i>Seguimiento de actividad física</i></li>
+                        <li><i>Resistente al agua hasta 50m</i></li>
+                    </ul>
+                    <p><strong>$299</strong></p>
+                    <button class="add-to-cart" data-id="23" data-name="Apple Watch Series 4" data-price="299">Añadir al carrito</button>
+                </div>
+                <!-- Producto 6 -->
+                <div class="product" id="product24">
+                    <img src="images/applewatch3.jpg" alt="Apple Watch Series 3">
+                    <h3>Apple Watch Series 3</h3>
+                    <ul class="product-features">
+                        <li><i>Pantalla Retina</i></li>
+                        <li><i>Chip S3 SiP</i></li>
+                        <li><i>Seguimiento de actividad física</i></li>
+                        <li><i>Resistente al agua hasta 50m</i></li>
+                        <li><i>Notificaciones en tiempo real</i></li>
+                    </ul>
+                    <p><strong>$199</strong></p>
+                    <button class="add-to-cart" data-id="24" data-name="Apple Watch Series 3" data-price="199">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Accesorios -->
+        <section id="accessories" class="products-section">
+            <h2>Accesorios</h2>
+            <div class="product-list">
+                <!-- Producto 1 -->
+                <div class="product" id="product25">
+                    <img src="images/airpodspro.jpg" alt="AirPods Pro">
+                    <h3>AirPods Pro</h3>
+                    <ul class="product-features">
+                        <li><i>Cancelación activa de ruido</i></li>
+                        <li><i>Chip H1</i></li>
+                        <li><i>Resistencia al sudor y agua</i></li>
+                        <li><i>Hasta 4.5 horas de escucha continua</i></li>
+                        <li><i>Compatible con iOS, iPadOS, macOS y watchOS</i></li>
+                    </ul>
+                    <p><strong>$249</strong></p>
+                    <button class="add-to-cart" data-id="25" data-name="AirPods Pro" data-price="249">Añadir al carrito</button>
+                </div>
+                <!-- Producto 2 -->
+                <div class="product" id="product26">
+                    <img src="images/airpods.jpg" alt="AirPods">
+                    <h3>AirPods</h3>
+                    <ul class="product-features">
+                        <li><i>Sonido de alta calidad</i></li>
+                        <li><i>Chip H1</i></li>
+                        <li><i>Resistencia al sudor y agua</i></li>
+                        <li><i>Hasta 5 horas de escucha continua</i></li>
+                        <li><i>Compatible con iOS, iPadOS, macOS y watchOS</i></li>
+                    </ul>
+                    <p><strong>$159</strong></p>
+                    <button class="add-to-cart" data-id="26" data-name="AirPods" data-price="159">Añadir al carrito</button>
+                </div>
+                <!-- Producto 3 -->
+                <div class="product" id="product27">
+                    <img src="images/magcharger.jpg" alt="MagSafe Charger">
+                    <h3>MagSafe Charger</h3>
+                    <ul class="product-features">
+                        <li><i>Carga inalámbrica</i></li>
+                        <li><i>Imán para fijación precisa</i></li>
+                        <li><i>Compatible con iPhone 12 y versiones posteriores</i></li>
+                        <li><i>Carga hasta 15W</i></li>
+                        <li><i>Diseño compacto</i></li>
+                    </ul>
+                    <p><strong>$39</strong></p>
+                    <button class="add-to-cart" data-id="27" data-name="MagSafe Charger" data-price="39">Añadir al carrito</button>
+                </div>
+                <!-- Producto 4 -->
+                <div class="product" id="product28">
+                    <img src="images/magcover.jpg" alt="MagSafe Cover">
+                    <h3>MagSafe Cover</h3>
+                    <ul class="product-features">
+                        <li><i>Funda compatible con MagSafe</i></li>
+                        <li><i>Protección de alta calidad</i></li>
+                        <li><i>Variedad de colores</i></li>
+                        <li><i>Diseño elegante y delgado</i></li>
+                        <li><i>Compatible con iPhone 12 y versiones posteriores</i></li>
+                    </ul>
+                    <p><strong>$49</strong></p>
+                    <button class="add-to-cart" data-id="28" data-name="MagSafe Cover" data-price="49">Añadir al carrito</button>
+                </div>
+                <!-- Producto 5 -->
+                <div class="product" id="product29">
+                    <img src="images/airpodsmax.jpg" alt="AirPods Max">
+                    <h3>AirPods Max</h3>
+                    <ul class="product-features">
+                        <li><i>Cancelación activa de ruido</i></li>
+                        <li><i>Chip H1</i></li>
+                        <li><i>Hasta 20 horas de batería con ANC activado</i></li>
+                        <li><i>Sonido espacial</i></li>
+                        <li><i>Diseño de alta gama</i></li>
+                    </ul>
+                    <p><strong>$549</strong></p>
+                    <button class="add-to-cart" data-id="29" data-name="AirPods Max" data-price="549">Añadir al carrito</button>
+                </div>
+                <!-- Producto 6 -->
+                <div class="product" id="product30">
+                    <img src="images/applepencil.jpg" alt="Apple Pencil 2nd Gen">
+                    <h3>Apple Pencil 2nd Gen</h3>
+                    <ul class="product-features">
+                        <li><i>Carga magnética</i></li>
+                        <li><i>Precisión de escritura de alta calidad</i></li>
+                        <li><i>Compatible con iPad Pro y iPad Air</i></li>
+                        <li><i>Diseño ergonómico</i></li>
+                        <li><i>Responde a gestos</i></li>
+                    </ul>
+                    <p><strong>$129</strong></p>
+                    <button class="add-to-cart" data-id="30" data-name="Apple Pencil 2nd Gen" data-price="129">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
